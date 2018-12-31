@@ -34,9 +34,10 @@ npm install http-server -g
 # --cors 代表接受任意域名的跨域资源共享，-c-1 代表不启用缓存
 http-server -a 127.0.0.1 -p 9999 --cors -c-1
 
-# 构建 dash.js，一个开源的支持 MPEG-Dash 协议的播放器
+# 找另一个目录下载构建 dash.js，一个开源的支持 MPEG-Dash 协议的播放器
 npm install -g grunt-cli
 git clone https://github.com/Dash-Industry-Forum/dash.js.git
+cd dash.js
 npm install
 grunt dev
 
